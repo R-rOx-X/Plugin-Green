@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ | Plugin Green</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .faq-section {
+            padding: 80px 0;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .faq-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .faq-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .faq-item {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        .faq-question {
+            width: 100%;
+            padding: 20px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: none;
+            border: none;
+            text-align: left;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--primary-dark);
+            cursor: pointer;
+        }
+        .faq-answer {
+            padding: 0 25px;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease-out;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+        .faq-item.active .faq-answer {
+            padding: 0 25px 20px 25px;
+            max-height: 200px;
+        }
+        .faq-item.active {
+            border-color: var(--accent);
+            box-shadow: 0 4px 15px var(--glow);
+        }
+        .faq-icon {
+            transition: transform 0.3s ease;
+        }
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="container nav-inner">
+            <a href="index.html" class="logo">
+                <img class="mainlogo" src="assets/logo.png" alt="Plugin Green Logo" height="60" width="65">
+            </a>
+            <a href="index.html" class="logo">PLUGIN <b>-</b><span>GREEN</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="aboutUs.html">AboutUs</a></li>
+                <li><a href="contact.html" class="btn-nav">Contact Us</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="faq-section">
+            <div class="faq-header">
+                <h2 class="section-head">Frequently Asked Questions</h2>
+                <p>Find answers to common questions about our green energy and electrical solutions.</p>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What types of EV charging solutions do you offer?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        We provide end-to-end EV charging solutions, including AC and DC fast charger installations for residential societies, commercial hubs, and public locations. We also offer unique services like "Host a Charger" and "Door-Step Charging".
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How can I earn passive income by hosting a charger?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        Through our "Host a Charger" program, you can turn your property into an EV charging hub. We handle the installation and maintenance, allowing you to earn from every charging session performed at your location.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Do you provide solar energy installation?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        Yes, we specialize in solar panel setup for both homes and businesses. Our team handles everything from site assessment and design to seamless installation and net metering liaisoning.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        In which cities does Plugin Green operate?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        Our main hub is located in Bhopal. We are currently expanding our footprint with new offices revealing soon in Indore and Noida to better serve our customers across India.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What electrical infrastructure services do you provide?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        We offer comprehensive specialist services including the installation of transformers (HT/LT) and generators, energy management, power system analysis, and liaisoning for load extensions and new connections.
+                    </div>
+                </div>
+                <div class="faq-item">
+    <button class="faq-question">
+        Is Plugin Green trustable?
+        <span class="faq-icon">+</span>
+    </button>
+    <div class="faq-answer">
+        Yes, Plugin Green is a trustworthy extension and the new face of our established firm, JK Enterprises. We carry forward a legacy of excellence in electrical solutions and professional installation services that began in 2011.
+    </div>
+</div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer" id="contact">
+        <div class="container footer-top">
+            <div class="footer-col offices">
+                <h4>PLUGIN GREEN INDIA PRIVATE LIMITED</h4>
+                <p><strong>Address:</strong>Vasundhara Apartment, Sharvdharm, Sarvdharm Colony, Kolar Rd, Bhopal, Madhya Pradesh 462042</p>
+                <h4>INDORE OFFICE</h4>
+                <p><strong>Address:</strong> Revealing Soon!</p>
+                <h4>NOIDA OFFICE</h4>
+                <p><strong>Address:</strong>Revealing soon!</p>
+            </div>
+            <div class="footer-col map-col">
+               <div class="footer-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.5562961219566!2d77.4200074!3d23.1863889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c430b0b4d8ea7%3A0xb1460cf833e0b1b!2sVasundhara%20Apartment!5e0!3m2!1sen!2sin!4v1771437092718!5m2!1sen!2sin" width="600" height="280" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"> </iframe>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="container footer-bottom-inner">
+                <p class="copyright">© 2025 All rights reserved. Plugin Green India Private Limited.</p>
+                <div class="follow-container">
+                    <p class="follow-again">Follow us :  <a href="https://x.com/PluginGreenBPL" class="social-icon"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/X_icon.svg/960px-X_icon.svg.png" height="25" alt=""></a>
+                    <a href="#" class="social-icon"><img src="assets/icons8-linkedin-48.png" height="30"></a></p>
+                   
+            </div>
+        </div>
+        
+    </footer>
+
+    <script>
+        // Simple accordion logic
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const faqItem = button.parentElement;
+                faqItem.classList.toggle('active');
+            });
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

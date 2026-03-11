@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Host a Charger | Plugin Green</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .merits-hero {
+            background: linear-gradient(rgba(6, 78, 59, 0.8), rgba(6, 78, 59, 0.8)), url('assets/hero.png') center/cover;
+            padding: 100px 0;
+            color: white;
+            text-align: center;
+        }
+        .merits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 80px 0;
+        }
+        .merit-card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid var(--border);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .merit-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px var(--glow);
+        }
+        .merit-icon {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        .form-section {
+            background: var(--bg-soft);
+            padding: 80px 0;
+        }
+        .contact-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 24px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        }
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; margin-bottom: 8px; font-weight: 600; color: var(--primary-dark); }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            outline: none;
+        }
+        .btn-submit {
+            width: 100%;
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 8px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .btn-submit:hover { background: var(--primary-dark); }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="container nav-inner">
+            <a href="index.html" class="logo">
+                <img class="mainlogo" src="assets/logo.png" alt="Plugin Green Logo" height="60" width="65">
+            </a>
+            <a href="index.html" class="logo">PLUGIN <b>-</b><span>GREEN</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="aboutUs.html">AboutUs</a></li>
+                <li><a href="contact.html" class="btn-nav">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="merits-hero">
+        <div class="container">
+            <h1 class="section-head" style="color: white;">Become a Charging Partner</h1>
+            <p>Turn your property into a green energy hub and earn passive income while supporting the EV revolution.</p>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="merits-grid">
+            <div class="merit-card">
+                <div class="merit-icon"><i class="fas fa-hand-holding-usd"></i></div>
+                <h3>Passive Income</h3>
+                <p>Earn a steady stream of revenue from every EV charging session performed at your location.</p>
+            </div>
+            <div class="merit-card">
+                <div class="merit-icon"><i class="fas fa-users"></i></div>
+                <h3>Increased Footfall</h3>
+                <p>Attract high-value EV owners to your business or property, increasing visibility and potential customers.</p>
+            </div>
+            <div class="merit-card">
+                <div class="merit-icon"><i class="fas fa-leaf"></i></div>
+                <h3>Eco-Friendly Branding</h3>
+                <p>Position yourself as a leader in sustainability by helping India breathe again through green infrastructure.</p>
+            </div>
+            <div class="merit-card">
+                <div class="merit-icon"><i class="fas fa-tools"></i></div>
+                <h3>Hassle-Free Setup</h3>
+                <p>We handle the end-to-end installation, commissioning, and 24/7 technical support.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="form-section" id="apply">
+        <div class="container">
+            <div class="faq-header" style="text-align: center; margin-bottom: 40px;">
+                <h2 class="section-head">Host a Charger Today</h2>
+                <p>Fill out the form below, and our team will contact you for a site assessment.</p>
+            </div>
+            <div class="contact-container">
+                <form action="https://formspree.io/f/xgolrwej" method="POST">
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" name="name" required placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" name="email" required placeholder="email@example.com">
+                    </div>
+                     <div class="form-group">
+                        <label>Phone Number</label>
+                      <input type="tel" name="phone" required pattern="[0-9]{10}" placeholder="10-digit mobile number" style="flex: 1;">
+                    </div>
+                    <div class="form-group">
+                        <label>Property Location</label>
+                        <input type="text" name="location" required placeholder="City, State">
+                    </div>
+                    <div class="form-group">
+                        <label>Property Type</label>
+                        <select name="property_type" style="width:100%; padding:12px; border:1px solid var(--border); border-radius:8px;">
+                            <option value="residential">Residential Society</option>
+                            <option value="commercial">Commercial/Office</option>
+                            <option value="retail">Retail/Mall</option>
+                            <option value="hospitality">Hotel/Restaurant</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Additional Message</label>
+                        <textarea name="message" rows="4" placeholder="Any specific requirements?"></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Submit Application</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-bottom">
+            <div class="container footer-bottom-inner">
+                <p class="copyright">© 2025 All rights reserved. Plugin Green India Private Limited.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

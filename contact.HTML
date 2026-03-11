@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Plugin Green</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+        }
+        /* Overriding style.css conflict for this specific nav */
+        .nav-inner { display: flex !important; }
+    </style>
+</head>
+<body class="bg-white font-sans text-slate-800">
+
+    <header class="main-header">
+        <nav class="container nav-inner flex justify-between items-center">
+            <a href="index.html" class="brand-link flex items-center no-underline gap-3">
+                <img src="assets/logo.png" alt="Plugin Green Logo" height="60" width="60">
+                <span class="brand-text text-2xl font-extrabold text-white uppercase">
+                    PLUGIN <span class="text-emerald-400">- GREEN</span>
+                </span>
+            </a>
+            
+            <ul class="nav-links hidden md:flex items-center gap-8 list-none">
+                <li><a href="index.html" class="text-white hover:text-emerald-400 font-medium">Home</a></li>
+                <li><a href="service.html" class="text-white hover:text-emerald-400 font-medium">Service</a></li>
+                <li><a href="aboutUs.html" class="text-white hover:text-emerald-400 font-medium">About Us</a></li>
+                <li><a href="contact.html" class="bg-emerald-500 text-emerald-950 px-5 py-2 rounded-lg font-bold hover:bg-emerald-400 transition">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <header class="gradient-bg py-20 px-4 text-center">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-emerald-900 mb-4">Get in Touch</h1>
+        <p class="text-emerald-700 max-w-xl mx-auto text-lg">
+            Whether you have a question about charging solutions or need technical support, our team is ready to help.
+        </p>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-16">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+            
+            <div class="lg:col-span-5 bg-white rounded-3xl shadow-xl shadow-emerald-100/50 p-8 border border-emerald-50">
+               <form id="contactForm" action="https://formspree.io/f/xbdagrrw" method="POST" class="space-y-5">
+                    <div>
+                        <label class="block text-sm font-bold text-emerald-900 mb-2">Full Name</label>
+                        <input type="text" name="name" required placeholder="Enter your name" class="w-full border border-emerald-100 rounded-xl px-4 py-3 focus:ring-2 focus:ring-emerald-500 focus:outline-none bg-emerald-50/30 transition">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-bold text-emerald-900 mb-2">Email Address</label>
+                        <input type="email" name="email" required placeholder="email@example.com" class="w-full border border-emerald-100 rounded-xl px-4 py-3 focus:ring-2 focus:ring-emerald-500 focus:outline-none bg-emerald-50/30 transition">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-bold text-emerald-900 mb-2">Message</label>
+                        <textarea name="message" rows="4" required placeholder="How can we help?" class="w-full border border-emerald-100 rounded-xl px-4 py-3 focus:ring-2 focus:ring-emerald-500 focus:outline-none bg-emerald-50/30 transition"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-4 rounded-xl transition shadow-lg shadow-emerald-200">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+
+            <div class="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white p-8 rounded-2xl border border-emerald-50 shadow-sm flex items-center space-x-5 hover:shadow-md transition">
+                    <div class="bg-emerald-100 text-emerald-700 p-4 rounded-full">
+                        <i class="fas fa-location-dot text-xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-emerald-900">Our Hub</h4>
+                        <p class="text-sm text-slate-500">Kolar, Bhopal, MP, India</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl border border-emerald-50 shadow-sm flex items-center space-x-5 hover:shadow-md transition">
+                    <div class="bg-emerald-100 text-emerald-700 p-4 rounded-full">
+                        <i class="fas fa-bolt text-xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-emerald-900">Charging Support</h4>
+                        <p class="text-sm text-slate-500">24/7 Monitoring</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl border border-emerald-50 shadow-sm flex items-center space-x-5 hover:shadow-md transition md:col-span-2">
+                    <div class="bg-emerald-100 text-emerald-700 p-4 rounded-full">
+                        <i class="fas fa-envelope-open-text text-xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-emerald-900">General Inquiry</h4>
+                        <p class="text-sm text-slate-500">support@plugin-green.com</p>
+                    </div>
+                </div>
+                
+                <div class="md:col-span-2 bg-emerald-900 rounded-3xl p-8 text-white flex justify-between items-center mt-4">
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Need immediate help?</h3>
+                        <p class="text-emerald-200 text-sm">Our technical team is available for live chat.</p>
+                    </div>
+                    <button class="bg-white text-emerald-900 px-6 py-2 rounded-full font-bold text-sm hover:bg-emerald-50 transition">
+                        Start Chat
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-emerald-950 py-12 text-center">
+        <div class="flex justify-center space-x-6 mb-6">
+            <a href="https://x.com/PluginGreenBPL" class="text-emerald-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-emerald-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p class="text-emerald-600 text-xs uppercase tracking-widest">&copy; 2026 Plugin Green India Private Limited. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            // Success alert will trigger upon submission
+            alert('Your message has been received! Our team in Bhopal will reach out shortly.');
+        });
+    </script>
+</body>
+</html>
